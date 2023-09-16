@@ -5,9 +5,111 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-left:5%;
+  margin-right:5%;
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header{
+  display:inline;
+  margin-top: 15%;
+}
+.add-task{
+  margin-top: 1%;
+  background-color:rgb(249, 250, 252);
+  padding:1%;
+  box-shadow:5px 5px rgb(230, 228, 228);
+
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+
+  margin-bottom: 2%;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 2px;
+
+}
+input[type=text]:focus {
+  border: 3px solid #697b84;
+  font-size: medium;
+  color:rgb(82, 140, 160);
+}
+
+.tasks{
+  background-color: rgba(230, 239, 249, 0.895);
+  color:black;
+  margin-top: auto;
+  box-shadow: 3px 3px 3px 3px  rgb(230, 228, 228);
+  margin-bottom:1.3%;
+  padding:1.2%;
+  border-radius: 2%;
+
+  
+}
+.btn{
+  float:right;
+  
+  cursor: pointer;
+
+}
+.no-tasks{
+  margin-top: 10%;
+  
+  text-align: center;
+}
+
+.add-task-button{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius:5%;
+  margin-bottom: 0.5%;
+  box-shadow:4px 4px rgb(128, 146, 125);
+  transition-duration: 0.4s;
+  
+}
+.add-task-button:hover{
+  background-color: rgb(83, 120, 83);
+  
+  
+}
+.add-task-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.add-task-button-div{
+  text-align: right;
+}
+.btn-mark{
+  color:rgb(107, 138, 143);
+
+
+}
+.marked{
+  color:rgb(12, 112, 234);
+}
+
+/* .btn-mark:active{
+  color:white;
+} */
+
+.complete:active{
+  color: lightblue;
 }
